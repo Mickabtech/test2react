@@ -5,16 +5,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: aqua;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .container{
-  background-color: blue;
+  background-color: rgb(255, 153, 0);
+  width: 15rem;
+  height: 6rem;
+  border: 2px solid gold ;
+  border-radius: 20px;
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
-.box{
-  width: 27rem;
-  height: 30rem;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-}
+

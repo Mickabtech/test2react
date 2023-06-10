@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import UserInfo from './Component/UserInfo';
+import './index.css';
 
 class App extends Component {
     state = {
@@ -14,49 +15,62 @@ class App extends Component {
 
   render() {
     return (
+        <>
       <div className='container'>
-        
+
        <UserInfo fullname={this.state.userInfo[0].fname} 
                  lastname={this.state.userInfo[0].lname}
                  email = {this.state.userInfo[0].email}
                  pnum = {this.state.userInfo[0].pnum}
-                 className = "box"
+                 className = "conbox"
                  
                  />
+        </div>
 
-        <UserInfo fullname={this.state.userInfo[1].fname} 
+        <div className='container'>
+
+       <UserInfo fullname={this.state.userInfo[1].fname} 
                  lastname={this.state.userInfo[1].lname}
                  email = {this.state.userInfo[1].email}
                  pnum = {this.state.userInfo[1].pnum}
-                className = "box"
+                 className = "conbox"
                  
                  />
+        </div>
 
-        <UserInfo fullname={this.state.userInfo[2].fname} 
+        <div className='container'>
+
+       <UserInfo fullname={this.state.userInfo[2].fname} 
                  lastname={this.state.userInfo[2].lname}
                  email = {this.state.userInfo[2].email}
                  pnum = {this.state.userInfo[2].pnum}
-                 className = "box"
+                 className = "conbox"
                  
                  />
-        
-        <UserInfo fullname={this.state.userInfo[3].fname} 
+        </div>
+
+        <div className='container'>
+
+       <UserInfo fullname={this.state.userInfo[3].fname} 
                  lastname={this.state.userInfo[3].lname}
                  email = {this.state.userInfo[3].email}
                  pnum = {this.state.userInfo[3].pnum}
-                 className = "box"
+                 className = "conbox"
                  
                  />
+        </div>
 
-        <UserInfo fullname={this.state.userInfo[4].fname} 
+        <div className='container'>
+
+       <UserInfo fullname={this.state.userInfo[4].fname} 
                  lastname={this.state.userInfo[4].lname}
                  email = {this.state.userInfo[4].email}
                  pnum = {this.state.userInfo[4].pnum}
-                className = "box"
+                 className = "conbox"
                  
                  />
-        
         </div>
+        </>
     )
   }
 }
